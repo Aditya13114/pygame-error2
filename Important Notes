@@ -1,0 +1,64 @@
+screen = pygame.display.set_mode((width, height))
+Creates the canvas
+
+pygame.display.update()
+Updates the canvas created earlier
+
+pygame.display.set_caption()
+Sets a title for the game
+
+clock = pygame.time.Clock()
+Sets or creates the clock
+
+clock.tick()
+It tell the "while True" loop not to run the game more than 60 frames a second
+Sets the frame rate cap of the given integer
+
+surface = pygame.Surface((width, height))
+This helps to create a plain surface with the given width and height
+
+screen.blit()
+It basically means placing one surface on top of another.
+To add different surfaces on the screen
+
+sky_surface.fill('Red')
+To add color to a surface
+
+The origin point of the canvas in on "Top Left" of the screen
+
+If want to go 'Right' then Increase x
+If want to go 'Down' then Increase y
+
+test_surface = pygame.image.load('path of the file')
+This is used to load the image
+
+test_font = pygame.font.Font(font type, font size)
+It is used to create the font that will be displayed in the surface
+
+text_surface = test_font.render('My first Game', False, 'Red')
+Creates a text surface. Value of text, Anti-Aliasing, Color
+
+Anti Aliasing answers always in True or False
+
+pygame.Rect()
+It is used to create rectangle
+
+get_rect()
+Creates a rectangle around a pre-existing surface
+
+player_rect.colliderect(snail_rect)
+It checks if 1st rect collided with the 2nd rect or not. It will give answer in either 0 or 1. Opposite will work too.
+
+mouse_pos = pygame.mouse.get_pos()
+Used to get the position for the x and y position in collidepoint.
+
+if event.type == pygame.MOUSEMOTION:
+It shows the position of the mouse. x and y
+
+ if event.type == pygame.MOUSEBUTTONUP:
+    print('mouse up')
+ It shows when the mouse button is released
+
+ if event.type == pygame.MOUSEBUTTONDOWN:
+    print('mouse down')
+ It shows when the mouse button is pressed
